@@ -4,7 +4,7 @@
   "description": "Node.js package that allows you to print messages to the console with customizable delays between each character.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "uglifyjs index.js -o index.min.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
     "typewriter"
   ],
   "author": "anmol5varma",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "uglify-js": "^3.17.4"
+  }
 }
