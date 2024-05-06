@@ -1,12 +1,23 @@
 {
-  "name": "intro",
+  "name": "log-delay",
   "version": "1.0.0",
-  "description": "",
-  "main": "hello.js",
+  "description": "Node.js package that allows you to print messages to the console with customizable delays between each character.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anmol5varma/log-delay.git"
+  },
+  "keywords": [
+    "log",
+    "delay",
+    "console",
+    "print",
+    "message",
+    "typewriter"
+  ],
+  "author": "anmol5varma",
+  "license": "MIT"
 }

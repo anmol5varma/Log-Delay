@@ -12,8 +12,7 @@ const streamWrite = async ({ message, delay, colorUnicode, nextLine }) => {
     return new Promise((res) => {
         let i = 0;
         const endInterval = setInterval(() => {
-            const printString = `${colorUnicode ? colorUnicode : ''}${message[i++]}`
-            process.stdout.write(printString);
+            process.stdout.write(message[i++]);
             if (i === message.length) {
                 process.stdout.write(`${nextLine ? '\n' : ''}`)
                 res('Done');
