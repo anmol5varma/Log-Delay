@@ -1,4 +1,4 @@
-const logger = require('./index');
+const logger = require('./dist/index');
 
 (async () => {
     await logger({message: 'This is an awesome package!!', delay: 100, nextLine: true})

@@ -2,10 +2,11 @@
   "name": "log-delay",
   "version": "1.0.0",
   "description": "Node.js package that allows you to print messages to the console with customizable delays between each character.",
-  "main": "index.js",
   "scripts": {
-    "build": "uglifyjs index.js -o index.min.js"
+    "build": "find src -type f -name '*.js' -exec sh -c 'uglifyjs $0 -o dist/${0#src/}' {} \\;",
+    "publish:npm": "npm run build && npm publish"
   },
+  "main": "./dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/anmol5varma/log-delay.git"
